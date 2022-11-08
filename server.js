@@ -42,7 +42,7 @@ const character = {
         'realName' : 'Sam Wilkins',
         'speciesName' : 'Human',
         'homeWorld' : 'Earth',
-        'Team' : ' Teen Team',
+        'Team' : 'Teen Team',
         'Suit' : 'Pink',
         'Abilities' : 'Subatomic Manipulation, Energy Manipulation, Flight',
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/7/74/Atom-EveProfile.png/revision/latest/scale-to-width-down/246?cb=20210619065420',
@@ -52,7 +52,7 @@ const character = {
         'realName' : 'Cecil Stedman',
         'speciesName' : 'Human',
         'homeWorld' : 'Earth',
-        'Team' : 'GLobal Defense Agency',
+        'Team' : 'Global Defense Agency',
         'Suit' : 'Black, White, Red',
         'Abilities' : 'The US Military',
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/f/f1/CecilProfile.png/revision/latest/scale-to-width-down/229?cb=20210619072853',
@@ -72,11 +72,21 @@ const character = {
         'realName' : 'Rex Sloane',
         'speciesName' : 'Human',
         'homeWorld' : 'Earth',
-        'Team' : ' Teen Team and Guardians of the Globe',
+        'Team' : 'Teen Team and Guardians of the Globe',
         'Suit' : 'Red and Yellow',
         'Abilities' : 'Enhanced Druability, Energy Projection, Agility',
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/8/87/Rex-SplodeProfile.png/revision/latest/scale-to-width-down/199?cb=20210619071518',
         },
+    
+        'Unknown': {
+            'realName' : 'NA',
+            'speciesName' : 'NA',
+            'homeWorld' : 'NA',
+            'Team' : 'NA',
+            'Suit' : 'NA',
+            'Abilities' : 'NA',
+            'image' : 'NA',
+            },
 }
 
 app.get('/', (request, response) => {
@@ -88,7 +98,7 @@ app.get('/api/:characterName',(request, response) => {
    if(character[characterName]){
     response.json(character[characterName])
    }else{
-    response.json(character['Invincible'])
+    response.json(character['Unknown'])
    }
 })
 
