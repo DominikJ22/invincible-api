@@ -5,8 +5,10 @@ const PORT = 8000
 
 app.use(cors())
 
-const char = {'invincible ': {
-    'charName' : 'Mark Grayson',
+const aliens = {
+
+'invincible': {
+    'alienName' : 'Mark Grayson',
     'speciesName' : 'Viltrumite-Human hybrid',
     'homeWorld' : 'Earth',
     'Team' : 'Teen Team and Guardians of the Globe',
@@ -16,7 +18,7 @@ const char = {'invincible ': {
 },
 
 'omni-man': {
-    'charName' : 'Nolan Grayson',
+    'alienName' : 'Nolan Grayson',
     'speciesName' : 'Viltrumite',
     'homeWorld' : 'Viltrum',
     'Team' : 'Guardians of the Globe and Viltrum Empire',
@@ -26,7 +28,7 @@ const char = {'invincible ': {
 },
 
 'battle beast': {
-    'charName' : 'Thokk',
+    'alienName' : 'Thokk',
     'speciesName' : 'Feline',
     'homeWorld' : 'Thraxa',
     'Team' : 'None',
@@ -36,7 +38,7 @@ const char = {'invincible ': {
 },
 
 'atom eve':{
-    'charName' : 'Sam Wilkins',
+    'alienName' : 'Sam Wilkins',
     'speciesName' : 'Human',
     'homeWorld' : 'Earth',
     'Team' : 'Teen Team',
@@ -46,7 +48,7 @@ const char = {'invincible ': {
 },
 
 'cecil stedman': {
-    'charName' : 'Cecil Stedman',
+    'alienName' : 'Cecil Stedman',
     'speciesName' : 'Human',
     'homeWorld' : 'Earth',
     'Team' : 'Global Defense Agency',
@@ -56,7 +58,7 @@ const char = {'invincible ': {
 },
 
 'allen the alien': {
-    'charName' : 'Allen',
+    'alien' : 'Allen',
     'speciesName' : 'Unopian',
     'homeWorld' : 'Unknown',
     'Team' : 'Coalition of Planets',
@@ -66,7 +68,7 @@ const char = {'invincible ': {
 },
 
 'rex splode': {
-    'charName' : 'Rex Sloane',
+    'alienName' : 'Rex Sloane',
     'speciesName' : 'Human',
     'homeWorld' : 'Earth',
     'Team' : 'Teen Team and Guardians of the Globe',
@@ -76,7 +78,7 @@ const char = {'invincible ': {
 },
 
 'unknown': {
-    'charName' : 'NA',
+    'alienName' : 'NA',
     'speciesName' : 'NA',
     'homeWorld' : 'NA',
     'Team' : 'NA',
@@ -93,15 +95,15 @@ app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:charName',(request, response) => {
-   const charName = request.params.charName.toLowerCase()
-   if(char[charName]){
-    response.json(char[charName])
-   }else{
-    response.json(char['unknown'])
-   }
+app.get('/api/:alienName', (request, response) => {
+    const aliensName = request.params.alienName.toLowerCase()
+    if(aliens[aliensName]){
+        response.json(aliens[aliensName])
+    } else {
+        response.json(aliens['unknown'])
+    }
 })
 
 app.listen(process.env.PORT || PORT, () => {
-    console.log('server is running.')
+    console.log('Server is running.')
 })
