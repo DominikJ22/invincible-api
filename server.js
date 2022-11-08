@@ -76,17 +76,17 @@ const character = {
         'Suit' : 'Red and Yellow',
         'Abilities' : 'Enhanced Druability, Energy Projection, Agility',
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/8/87/Rex-SplodeProfile.png/revision/latest/scale-to-width-down/199?cb=20210619071518',
-        },
+    },
     
-        'Unknown': {
-            'realName' : 'NA',
-            'speciesName' : 'NA',
-            'homeWorld' : 'NA',
-            'Team' : 'NA',
-            'Suit' : 'NA',
-            'Abilities' : 'NA',
-            'image' : 'NA',
-            },
+    'Unknown': {
+        'realName' : 'NA',
+        'speciesName' : 'NA',
+        'homeWorld' : 'NA',
+        'Team' : 'NA',
+        'Suit' : 'NA',
+        'Abilities' : 'NA',
+        'image' : 'NA',
+    }
 }
 
 app.get('/', (request, response) => {
