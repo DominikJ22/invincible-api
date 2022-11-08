@@ -8,7 +8,7 @@ const PORT = 8000
 app.use(cors())
 
 const char = {
-    'Invincible': {
+    'invincible ': {
         'realName' : 'Mark Grayson',
         'speciesName' : 'Viltrumite-Human hybrid',
         'homeWorld' : 'Earth',
@@ -18,7 +18,7 @@ const char = {
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/a/a3/Invincible_%28Mark_Grayson%29.png/revision/latest/scale-to-width-down/333?cb=20210328173918',
     },
 
-    'Omni-Man': {
+    'omni-man': {
         'realName' : 'Nolan Grayson',
         'speciesName' : 'Viltrumite',
         'homeWorld' : 'Viltrum',
@@ -28,7 +28,7 @@ const char = {
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/6/63/Omni-ManProfile.png/revision/latest?cb=20210619064910',
     },
 
-    'Battle Beast': {
+    'battle beast': {
         'realName' : 'Thokk',
         'speciesName' : 'Feline',
         'homeWorld' : 'Thraxa',
@@ -38,7 +38,7 @@ const char = {
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/4/41/Battle_Beast_Ep_5_Invincible_%28244%29.png/revision/latest/scale-to-width-down/350?cb=20210409145922',
     },
     
-    'Atom Eve':{
+    'atom eve':{
         'realName' : 'Sam Wilkins',
         'speciesName' : 'Human',
         'homeWorld' : 'Earth',
@@ -48,7 +48,7 @@ const char = {
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/7/74/Atom-EveProfile.png/revision/latest/scale-to-width-down/246?cb=20210619065420',
     },
 
-    'Cecil Stedman': {
+    'cecil stedman': {
         'realName' : 'Cecil Stedman',
         'speciesName' : 'Human',
         'homeWorld' : 'Earth',
@@ -58,7 +58,7 @@ const char = {
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/f/f1/CecilProfile.png/revision/latest/scale-to-width-down/229?cb=20210619072853',
     },
 
-    'Allen the Alien': {
+    'allen the alien': {
         'realName' : 'Allen',
         'speciesName' : 'Unopian',
         'homeWorld' : 'Unknown',
@@ -68,7 +68,7 @@ const char = {
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/9/94/Allen_The_Aliens_s448_%281%29.png/revision/latest/scale-to-width-down/350?cb=20210327224202',
     },
 
-    'Rex Splode': {
+    'rex splode': {
         'realName' : 'Rex Sloane',
         'speciesName' : 'Human',
         'homeWorld' : 'Earth',
@@ -78,7 +78,7 @@ const char = {
         'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/8/87/Rex-SplodeProfile.png/revision/latest/scale-to-width-down/199?cb=20210619071518',
     },
     
-    'Unknown': {
+    'unknown': {
         'realName' : 'NA',
         'speciesName' : 'NA',
         'homeWorld' : 'NA',
