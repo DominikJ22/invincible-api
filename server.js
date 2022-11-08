@@ -98,7 +98,7 @@ app.get('/api/:characterName',(request, response) => {
    if(character[characterName]){
     response.json(character[characterName])
    }else{
-    response.json(character['Unknown'])
+    response.json(character['unknown'])
    }
 })
 
