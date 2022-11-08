@@ -9,7 +9,7 @@ app.use(cors())
 
 const char = {
     'invincible ': {
-        'realName' : 'Mark Grayson',
+        'charName' : 'Mark Grayson',
         'speciesName' : 'Viltrumite-Human hybrid',
         'homeWorld' : 'Earth',
         'Team' : 'Teen Team and Guardians of the Globe',
@@ -19,7 +19,7 @@ const char = {
     },
 
     'omni-man': {
-        'realName' : 'Nolan Grayson',
+        'charName' : 'Nolan Grayson',
         'speciesName' : 'Viltrumite',
         'homeWorld' : 'Viltrum',
         'Team' : 'Guardians of the Globe and Viltrum Empire',
@@ -29,7 +29,7 @@ const char = {
     },
 
     'battle beast': {
-        'realName' : 'Thokk',
+        'charName' : 'Thokk',
         'speciesName' : 'Feline',
         'homeWorld' : 'Thraxa',
         'Team' : 'None',
@@ -39,7 +39,7 @@ const char = {
     },
     
     'atom eve':{
-        'realName' : 'Sam Wilkins',
+        'charName' : 'Sam Wilkins',
         'speciesName' : 'Human',
         'homeWorld' : 'Earth',
         'Team' : 'Teen Team',
@@ -49,7 +49,7 @@ const char = {
     },
 
     'cecil stedman': {
-        'realName' : 'Cecil Stedman',
+        'charName' : 'Cecil Stedman',
         'speciesName' : 'Human',
         'homeWorld' : 'Earth',
         'Team' : 'Global Defense Agency',
@@ -59,7 +59,7 @@ const char = {
     },
 
     'allen the alien': {
-        'realName' : 'Allen',
+        'charName' : 'Allen',
         'speciesName' : 'Unopian',
         'homeWorld' : 'Unknown',
         'Team' : 'Coalition of Planets',
@@ -69,7 +69,7 @@ const char = {
     },
 
     'rex splode': {
-        'realName' : 'Rex Sloane',
+        'charName' : 'Rex Sloane',
         'speciesName' : 'Human',
         'homeWorld' : 'Earth',
         'Team' : 'Teen Team and Guardians of the Globe',
@@ -79,7 +79,7 @@ const char = {
     },
     
     'unknown': {
-        'realName' : 'NA',
+        'charName' : 'NA',
         'speciesName' : 'NA',
         'homeWorld' : 'NA',
         'Team' : 'NA',
