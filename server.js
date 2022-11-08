@@ -7,7 +7,7 @@ const PORT = 8000
 
 app.use(cors())
 
-const character = {
+const char = {
     'Invincible': {
         'realName' : 'Mark Grayson',
         'speciesName' : 'Viltrumite-Human hybrid',
@@ -93,12 +93,12 @@ app.get('/', (request, response) => {
     response.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:characterName',(request, response) => {
-   const characterName = request.params.characterName.toLowerCase()
-   if(character[characterName]){
-    response.json(character[characterName])
+app.get('/api/:charName',(request, response) => {
+   const charName = request.params.charName.toLowerCase()
+   if(char[charName]){
+    response.json(char[charName])
    }else{
-    response.json(character['unknown'])
+    response.json(char['unknown'])
    }
 })
 
