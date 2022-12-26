@@ -15,7 +15,7 @@ const aliens = {
     'Team' : 'Teen Team and Guardians of the Globe',
     'Suit' : 'Yellow, Blue, Black',
     'Abilities' : 'Superhuman Strength, Stamina, Speed, Invulnerability, Flight, Enhanced Healing Factor,Decelerated aging',
-    'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/a/a3/Invincible_%28Mark_Grayson%29.png/revision/latest/scale-to-width-down/333?cb=20210328173918',
+    'image' : 'https://static.wikia.nocookie.net/amazon-invincible/images/a/a3/Invincible_%28Mark_Grayson%29.png/revision/latest/scale-to-width-down/1000?cb=20210328173918',
 },
 
 'omni-man': {
